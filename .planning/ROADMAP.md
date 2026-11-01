@@ -1,12 +1,12 @@
 # Roadmap: Digit Pattern Recognition System
 
 **Created:** 2026-03-28
-**Milestone:** v1.0 — Complete Experiment 9
+**Milestone:** v1.0 - Complete Experiment 9
 
 ## Phases
 
 ### Phase 1: ML Pipeline & Model Training
-**Goal:** Build the complete ML pipeline — load data, preprocess, train KNN & SVM classifiers, evaluate, and save models
+**Goal:** Build the complete ML pipeline - load data, preprocess, train KNN & SVM classifiers, evaluate, and save models
 **Requirements:** DATA-01, DATA-02, DATA-03, DATA-04, TRAIN-01, TRAIN-02, TRAIN-03, TRAIN-04, TRAIN-05, TRAIN-06
 **UI hint**: no
 

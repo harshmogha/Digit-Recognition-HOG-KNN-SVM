@@ -6,13 +6,13 @@ A complete pattern recognition pipeline for handwritten digit recognition using 
 
 ## Core Value
 
-Users can draw a digit on a canvas and instantly see the trained model's prediction with confidence scores — demonstrating the complete pattern recognition pipeline from training to real-world inference.
+Users can draw a digit on a canvas and instantly see the trained model's prediction with confidence scores - demonstrating the complete pattern recognition pipeline from training to real-world inference.
 
 ## Requirements
 
 ### Validated
 
-(None yet — ship to validate)
+(None yet - ship to validate)
 
 ### Active
 
@@ -30,10 +30,10 @@ Users can draw a digit on a canvas and instantly see the trained model's predict
 
 ### Out of Scope
 
-- Deep learning / neural networks — sklearn classifiers are sufficient for this experiment
-- Custom dataset collection — using sklearn's built-in digits dataset
-- Mobile app — web-first, accessible from any browser
-- User authentication — not needed for an experiment demo
+- Deep learning / neural networks - sklearn classifiers are sufficient for this experiment
+- Custom dataset collection - using sklearn's built-in digits dataset
+- Mobile app - web-first, accessible from any browser
+- User authentication - not needed for an experiment demo
 
 ## Context
 
@@ -44,7 +44,7 @@ Users can draw a digit on a canvas and instantly see the trained model's predict
 
 ## Constraints
 
-- **Tech Stack**: Python, Flask, scikit-learn, NumPy, Matplotlib — standard ML stack
+- **Tech Stack**: Python, Flask, scikit-learn, NumPy, Matplotlib - standard ML stack
 - **Dataset**: sklearn digits dataset (1797 samples, 8x8 pixels)
 - **Timeline**: Single session implementation
 - **UI**: Must be visually impressive with modern design aesthetics
@@ -53,10 +53,10 @@ Users can draw a digit on a canvas and instantly see the trained model's predict
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Flask over Streamlit | Full control over UI design, better for canvas drawing | — Pending |
-| KNN + SVM | Compare two approaches as required by experiment | — Pending |
-| joblib for model saving | Standard sklearn model serialization | — Pending |
-| sklearn digits over MNIST | Lighter weight, built-in, sufficient for experiment | — Pending |
+| Flask over Streamlit | Full control over UI design, better for canvas drawing | - Pending |
+| KNN + SVM | Compare two approaches as required by experiment | - Pending |
+| joblib for model saving | Standard sklearn model serialization | - Pending |
+| sklearn digits over MNIST | Lighter weight, built-in, sufficient for experiment | - Pending |
 
 ## Evolution
 
@@ -71,8 +71,8 @@ This document evolves at phase transitions and milestone boundaries.
 
 **After each milestone** (via `/gsd-complete-milestone`):
 1. Full review of all sections
-2. Core Value check — still the right priority?
-3. Audit Out of Scope — reasons still valid?
+2. Core Value check - still the right priority?
+3. Audit Out of Scope - reasons still valid?
 4. Update Context with current state
 
 ---

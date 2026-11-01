@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Recognizer - Minimal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/new_style.css?v=2.2">
+</head>
+<body>
+    <!-- UI switch: upper right corner -->
+    <nav class="ui-switch" aria-label="Switch interface">
+        <span class="ui-switch-label">Interface</span>
+        <a href="/" class="active" aria-current="page">Minimal</a>
+        <a href="/old">Detailed</a>
+    </nav>
+
+    <div class="app-container">
+        <!-- Sidebar: Accuracy + Confidence -->
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Analysis</h1>
+            </div>
+
+            <div class="accuracy-section">
+                <h2>Model Accuracy</h2>
+                <div class="accuracy-grid">
+                    <div class="acc-card knn">
+                        <div class="acc-label">KNN</div>
+                        <div class="acc-value" id="knnAcc">--%</div>
+                        <div class="acc-bar"><div class="acc-fill" id="knnBar"></div></div>
+                    </div>
+                    <div class="acc-card svm">
+                        <div class="acc-label">SVM</div>
+                        <div class="acc-value" id="svmAcc">--%</div>
+                        <div class="acc-bar"><div class="acc-fill" id="svmBar"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="confidence-section">
+                <h2>Confidence Score</h2>
+                <div class="conf-legend">
+                    <span>Low</span>
+                    <div class="conf-legend-bar"></div>
+                    <span>High</span>
+                </div>
+                <div id="confidenceList" class="confidence-list">
+                    <div class="empty-state">Prediction required</div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main: Drawing & Prediction -->
+        <main class="main-workspace">
+            <header class="workspace-header">
+                <div class="header-left">
+                    <div class="model-toggle">
+                        <button class="toggle-btn active" data-model="svm">SVM</button>
+                        <button class="toggle-btn" data-model="knn">KNN</button>
+                    </div>
+                    <label class="live-toggle" title="Analyze automatically shortly after you stop drawing">
+                        <input type="checkbox" id="liveToggle">
+                        <span>Auto-analyze</span>
+                    </label>
+                </div>
+                <div class="prediction-box">
+                    <span class="pred-label">Prediction</span>
+                    <div class="pred-output" id="mainPrediction">?</div>
+                    <div class="compare-line" id="compareLine"></div>
+                </div>
+            </header>
+
+            <div class="canvas-area">
+                <div class="canvas-wrapper">
+                    <canvas id="drawCanvas" width="960" height="320"></canvas>
+                    <canvas id="boxCanvas" width="960" height="320"></canvas>
+                    <div class="canvas-hint" id="canvasHint">Draw one or more digits here - leave a small gap between digits</div>
+                </div>
+
+                <div class="actions">
+                    <button class="btn btn-secondary" id="btnUndo" onclick="undoStroke()" disabled>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 14L4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 010 11H11"/></svg>
+                        Undo
+                    </button>
+                    <button class="btn btn-secondary" id="btnClear" onclick="clearCanvas()">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
+                        Clear
+                    </button>
+                    <button class="btn btn-primary" id="btnAnalyze" onclick="predict()">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        Analyze Drawing
+                    </button>
+                </div>
+                <p class="shortcut-hint">Enter = Analyze · Ctrl+Z = Undo · Esc = Clear</p>
+                <p class="status-msg" id="statusMsg"></p>
+
+                <div class="results-wrap" id="resultsWrap" hidden>
+                    <h2>Detected digits, left to right · click a card for details</h2>
+                    <div id="digitResults" class="digit-results"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/new_app.js?v=2.1"></script>
+</body>
+</html>
