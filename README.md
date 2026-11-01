@@ -2,6 +2,7 @@
 
 # 🔢 Digit Recognizer
 
+
 ### Handwritten digits → HOG → KNN & SVM
 
 </div>
