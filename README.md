@@ -1,7 +1,7 @@
 <a id="top"></a>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C6FF,50:4F46E5,100:F107A3&height=240&section=header&text=Digit%20Recognizer&fontSize=64&fontColor=ffffff&fontAlignY=38&desc=Handwritten%20digits%20%E2%86%92%20HOG%20%E2%86%92%20KNN%20%26%20SVM&descAlignY=60&descSize=22&animation=fadeIn" alt="Digit Recognizer banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C6FF,50:4F46E5,100:F107A3&height=240&section=header&text=Digit%20Recognizer&fontSize=64&fontColor=ffffff&fontAlignY=38&desc=Handwritten%20digits%20%E2%86%92%20HOG%20%E2%86%92%20KNN%20%26%20SVM&descAlignY=60&descSize=22&animation=fadeIn" alt="Digit Recognizer"/>
 </p>
 
 <p align="center">
