@@ -1,9 +1,13 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00C6FF,50:4F46E5,100:F107A3&height=230&section=header&text=Digit%20Recognizer&fontSize=64&fontColor=ffffff&fontAlignY=38&desc=Handwritten%20digits%20%E2%86%92%20HOG%20%E2%86%92%20KNN%20%26%20SVM&descAlignY=60&descSize=22&animation=fadeIn" alt="Digit Recognizer banner"/>
-</p>
+<div align="center">
+
+# 🔢 Digit Recognizer
+
+### Handwritten digits → HOG → KNN & SVM
+
+</div>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&weight=600&size=22&pause=1000&color=4F46E5&center=true&vCenter=true&width=760&height=50&lines=Draw+one+or+many+digits;HOG+features+%2B+KNN+%2B+SVM+side+by+side;Live+confidence+scores%3A+red+to+green;Minimal+and+Detailed+interfaces;Fetch+MNIST%2C+train%2C+run" alt="Typing animation"/>
+  <i>Draw one or many digits · HOG features + KNN + SVM side by side · Live confidence scores: red to green · Minimal and Detailed interfaces · Fetch MNIST, train, run</i>
 </p>
 
 <p align="center">
@@ -44,7 +48,7 @@
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
 ## 💫 About
 
@@ -58,19 +62,19 @@ Everything the app needs is **built by the code itself**. No dataset and no trai
 <table align="center">
   <tr>
     <td align="center">
-      <img src="https://img.shields.io/badge/98.06%25-4CAF50?style=for-the-badge" alt="98.06%"/><br/>
+      <h2>98.06%</h2>
       <sub><b>SVM accuracy</b><br/>(8,000 unseen test images)</sub>
     </td>
     <td align="center">
-      <img src="https://img.shields.io/badge/95.69%25-2196F3?style=for-the-badge" alt="95.69%"/><br/>
+      <h2>95.69%</h2>
       <sub><b>KNN accuracy</b><br/>(same test images)</sub>
     </td>
     <td align="center">
-      <img src="https://img.shields.io/badge/324-9C27B0?style=for-the-badge" alt="324"/><br/>
+      <h2>324</h2>
       <sub><b>HOG features</b><br/>per digit (from 784 pixels)</sub>
     </td>
     <td align="center">
-      <img src="https://img.shields.io/badge/40%2C000-FF9800?style=for-the-badge" alt="40,000"/><br/>
+      <h2>40,000</h2>
       <sub><b>MNIST images used</b><br/>32,000 train / 8,000 test</sub>
     </td>
   </tr>
@@ -79,7 +83,7 @@ Everything the app needs is **built by the code itself**. No dataset and no trai
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
 ## ✨ Highlights
 
@@ -133,7 +137,7 @@ Everything the app needs is **built by the code itself**. No dataset and no trai
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
 ## 🖼️ Screenshots
 
@@ -165,7 +169,7 @@ Everything the model does, laid out: intensity maps, HOG maps, all 10 confidence
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
 ## 🧠 How it works
 
@@ -284,7 +288,7 @@ Values in between blend smoothly. The scale is fixed, so red really means low co
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
 ## 📊 Results
 
@@ -343,7 +347,7 @@ Values are percentages from one training run. The 40,000 images are sampled rand
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
 ## 🚀 Quick start
 
@@ -417,7 +421,7 @@ python app.py
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
 ## 🎮 Using the app
 
@@ -438,7 +442,7 @@ python app.py
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
 ## 🔌 API
 
@@ -486,7 +490,7 @@ Send a white-on-black PNG as a base64 data URL:
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
 ## 📁 Project structure
 
@@ -516,12 +520,9 @@ Send a white-on-black PNG as a base64 data URL:
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
 ## ⚠️ Limitations
-
-> [!CAUTION]
-> Keep these in mind when using the app:
 
 - The models are trained on **MNIST**, not on mouse-drawn digits, so accuracy on your own drawings can be lower than the numbers above.
 - **Touching or overlapping digits** are merged into one blob and read as a single digit. A digit written in two separate pieces can be split in two.
@@ -532,12 +533,7 @@ Send a white-on-black PNG as a base64 data URL:
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-
-<br/>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+---
 
 ## 🙏 Credits
 
@@ -548,8 +544,6 @@ Send a white-on-black PNG as a base64 data URL:
 
 <br/>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:F107A3,50:4F46E5,100:00C6FF&height=120&section=footer" alt="footer"/>
-</p>
+<p align="center">—— ⭐ ——</p>
 
 <p align="center"><sub>If this project helped you, consider giving it a ⭐</sub></p>
